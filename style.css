@@ -1,0 +1,734 @@
+:root {
+    --font-size-primary: 18px;
+
+    --font-color-primary: hsl(213, 9%, 39%);
+    --font-color-secondary: hsl(0, 0%, 100%);
+    --font-color-third: hsl(212, 27%, 19%);
+    --font-color-fourth: hsl(210, 4%, 67%);
+    --font-color-fifth: hsl(168, 34%, 41%);
+    --font-color-sixth: hsl(198, 62%, 26%);
+    --font-color-seventh: hsl(167, 40%, 24%);
+
+    --font-family-primary: 'Barlow', sans-serif;
+    --font-family-secondary: 'Fraunces', serif;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.general-total-navbar {
+    width: 100%;
+    height: 798px;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.general-navbar {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px 0px 35px;
+}
+
+.general-navbar-subcontent {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--font-size-primary);
+    color: var(--font-color-secondary);
+    font-family: var(--font-family-primary);
+}
+
+.general-navbar-modal{
+    position: absolute;
+    width: 327px;
+    height: 303px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-primary);
+    background-color: var(--font-color-secondary);
+    color: var(--font-color-primary);
+    margin-top: 50px;
+}
+
+.general-navbar-modal-button{
+    height: 60px;
+    width: 150px;
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-secondary);
+    background-color: hsl(50, 100%, 50%);
+    color: var(--font-color-third);
+    border-radius: 50px;
+    border: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.general-navbar-creatives {
+    height: 430px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.general-navbar-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    font-size: 50px;
+    color: var(--font-color-secondary);
+    font-family: var(--font-family-secondary);
+}
+
+.general-navbar-arrow {
+    height: 110px;
+}
+
+#general-navbar-hamburger,
+#general-modal-open{
+    display: none;
+}
+
+
+.general-navbar-contact {
+    height: 50px;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: var(--font-color-third);
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-secondary);
+    font-weight: bold;
+    border-color: transparent;
+    transition: 500ms;
+    text-transform: uppercase;
+}
+
+.general-navbar-contact:hover {
+    background-color: hsl(200, 100%, 72%);
+    color: var(--font-color-secondary);
+}
+
+.general-total-about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.general-about-image-cup,
+.general-about-image-egg {
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.general-about-image-egg {
+    background-image: url(./images/desktop/image-transform.jpg);
+}
+
+.general-about-image-cup {
+    background-image: url(./images/desktop/image-stand-out.jpg)
+}
+
+.general-about-content-image-egg {
+    height: 600px;
+}
+
+.general-about-content-image-cup {
+    height: 600px;
+}
+
+.general-about-cherry,
+.general-about-orange {
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.general-about-fruits {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.general-about-cherry {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.general-about-orange {
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+
+.general-about {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.general-about-title {
+    width: 350px;
+    font-size: 2.5rem;
+    font-family: var(--font-family-secondary);
+    color: var(--font-color-third);
+    font-weight: bold;
+}
+
+.general-about-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.general-about-text {
+    width: 450px;
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-primary);
+    color: var(--font-color-primary);
+}
+
+.general-about-underline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.general-about-button-yellow {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-secondary);
+    color: var(--font-color-third);
+    font-weight: 800;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+
+.general-about-button-red {
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-secondary);
+    color: var(--font-color-third);
+    font-weight: 800;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.general-about-underlineyellow {
+    width: 140px;
+    height: 10px;
+    position: absolute;
+    cursor: pointer;
+    background-color: hsl(46, 100%, 86%);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.general-about-underlinered {
+    width: 140px;
+    height: 10px;
+    position: absolute;
+    background-color: hsl(11, 100%, 92%);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.general-about-underlineyellow:hover {
+    background-color: black;
+}
+
+.general-about-underlinered:hover {
+    background-color: black;
+}
+
+.general-about-design {
+    font-size: 2.5rem;
+    font-family: var(--font-family-secondary);
+    color: var(--font-color-seventh);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.general-about-subdesign {
+    width: 380px;
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-primary);
+    color: var(--font-color-fifth);
+    font-weight: bold;
+    text-align: center;
+}
+
+.general-about-photography {
+    font-size: 2.5rem;
+    font-family: var(--font-family-secondary);
+    color: var(--font-color-third);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.general-about-subphotography {
+    width: 380px;
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-primary);
+    color: var(--font-color-sixth);
+    font-weight: bold;
+    text-align: center;
+}
+
+.general-total-testimonials {
+    width: 100%;
+    height: 775px;
+}
+
+.general-testimonials-title {
+    height: 200px;
+    font-size: var(--font-size-primary);
+    color: var(--font-color-fourth);
+    font-family: var(--font-family-secondary);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    letter-spacing: 10px;
+}
+
+.general-testimonials-content {
+    width: 1250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.general-total-testimonials {
+    height: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.general-testimonials-subcontent {
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-primary);
+    color: var(--font-color-primary);
+    font-weight: 500;
+}
+
+.general-testimonials-profile {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.general-testimonials-names {
+    font-size: var(--font-size-primary);
+    color: var(--font-color-third);
+    font-weight: 900;
+    font-family: var(--font-family-secondary);
+}
+
+.general-testimonials-rol {
+    color: var(--font-color-fourth);
+}
+
+.general-content-images {
+    height: 445px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.general-image-milk,
+.general-image-orange,
+.general-image-cone,
+.general-image-sugar {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.general-image-milk {
+    background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+}
+
+.general-image-orange {
+    background-image: url(./images/desktop/image-gallery-orange.jpg);
+}
+
+.general-image-cone {
+    background-image: url(./images/desktop/image-gallery-cone.jpg);
+}
+
+.general-image-sugar {
+    background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.general-content-footer {
+    height: 350px;
+    width: 100%;
+    background-color: hsl(167, 44%, 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.general-footer-text {
+    height: 150px;
+    display: flex;
+    font-size: var(--font-size-primary);
+    color: var(--font-color-fifth);
+    font-family: var(--font-family-primary);
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.general-footer-title {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.general-footer-subtext {
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.general-footer-subtext:hover {
+    color: var(--font-color-secondary);
+}
+
+.general-footer-image {
+    height: 35px;
+    cursor: pointer;
+}
+
+.general-footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 40px;
+}
+
+.general-footer-icon {
+    fill: #2C7566;
+    transition: all 200ms;
+}
+
+.general-footer-icon:hover {
+    fill: var(--font-color-secondary);
+}
+
+.attribution {
+    margin-top: 35px;
+    font-size: var(--font-size-primary);
+    color: var(--font-color-fifth);
+    font-family: var(--font-family-primary);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(210, 4%, 67%);
+    border-radius: 10px;
+    transition: all 300ms
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(213, 9%, 39%);
+}
+
+@media screen and (max-width: 1260px) {
+    .general-about {
+        width: 70%;
+    }
+
+    .general-testimonials-content {
+        width: 1025px;
+    }
+
+    .general-testimonials-subcontent {
+        width: 300px;
+    }
+
+    .general-about-text {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .general-testimonials-content {
+        width: 830px;
+    }
+
+    .general-testimonials-subcontent {
+        width: 250px;
+    }
+
+    .general-about {
+        width: 60%;
+    }
+
+    .general-about-subdesign,
+    .general-about-subphotography {
+        width: 280px;
+    }
+
+    .general-about-photography {
+        margin-bottom: 24px;
+    }
+
+    .general-navbar-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .general-about-title {
+        width: 310px;
+        font-size: 2rem;
+    }
+
+    .general-testimonials-content {
+        width: 780px;
+    }
+
+    .general-testimonials-subcontent {
+        width: 200px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .general-total-navbar {
+        background-image: url(./images/mobile/image-header.jpg);
+    }
+
+    .general-about-image-egg {
+        height: 310px;
+        background-image: url(./images/mobile/image-transform.jpg);
+    }
+
+    .general-about-content-image-egg,
+    .general-about-content-image-cup {
+        height: 310px;
+    }
+
+    .general-about-image-cup {
+        height: 310px;
+        background-image: url(./images/mobile/image-stand-out.jpg)
+    }
+
+    .general-about-cherry {
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+    }
+
+    .general-about-orange {
+        background-image: url(./images/mobile/image-photography.jpg);
+    }
+
+    .general-image-milk {
+        background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+    }
+
+    .general-imageorange {
+        background-image: url(./images/mobile/image-gallery-orange.jpg);
+    }
+
+    .general-image-cone {
+        background-image: url(./images/mobile/image-gallery-cone.jpg);
+    }
+
+    .general-image-sugar {
+        background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+
+    .general-navbar-subcontent {
+        display: none;
+    }
+
+    #general-navbar-hamburger {
+        display: block;
+    }
+
+    .general-total-navbar {
+        height: 537px;
+    }
+    .general-navbar-modal-total{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .general-modal-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .general-navbar-title {
+        width: 400px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .general-navbar-creatives {
+        height: 368px;
+    }
+
+    .general-total-about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .general-about-content-image-egg {
+        grid-row: 1;
+    }
+
+    .general-about-content-image-cup {
+        grid-row: 3;
+    }
+
+    .general-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .general-about-text {
+        width: 291px;
+    }
+
+    .general-testimonials-content {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .general-about-center {
+        height: 435px;
+    }
+
+    .general-about-cherry,
+    .general-about-orange {
+        height: 600px;
+    }
+
+    .general-about-fruits {
+        width: 100%;
+        height: 565px;
+        padding-left: 0;
+    }
+
+    .general-total-testimonials {
+        height: 100%;
+    }
+
+    .general-testimonials-subcontent {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .general-testimonials-subcontent {
+        height: 410px;
+    }
+
+    .general-testimonials-title {
+        height: 110px;
+    }
+
+    .general-content-images {
+        height: 370px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .general-image-milk,
+    .general-image-orange,
+    .general-image-cone,
+    .general-image-sugar {
+        height: 100%;
+    }
+
+    .general-content-footer {
+        height: 347px;
+    }
+
+    .general-footer-text {
+        gap: 30px;
+    }
+
+    .general-footer-social {
+        gap: 30px;
+    }
+
+    .attribution {
+        font-size: 12px;
+    }
+
+    .general-testimonials-title {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .general-navbar-title {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .general-navbar-title {
+        font-size: 1rem;
+    }
+}
