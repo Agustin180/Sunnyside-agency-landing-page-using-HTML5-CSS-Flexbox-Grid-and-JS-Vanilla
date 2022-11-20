@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://www.frontendmentor.io/solutions/sunnysideagencylandingpageusinghtml5cssflexboxgridjsvanilla-jfDQSKqblv)
+- Live Site URL: (https://agustin180.github.io/Sunnyside-agency-landing-page-using-HTML5-CSS-Flexbox-Grid-and-JS-Vanilla/)
 
 ## My process
 
